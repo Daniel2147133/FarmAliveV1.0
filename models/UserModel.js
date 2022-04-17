@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const userSchema = new Schema(
   {
     name: {
-      type: toString,
+      type: String,
     },
     designation: {
       type: String,
@@ -22,5 +22,5 @@ const userSchema = new Schema(
   { timestamps: true }
 );
 
-const User = mongoose.model("User", userSchema);
-module.exports = User;
+const UserModel = mongoose.model("UserModel", userSchema);
+module.exports = UserModel;

@@ -1,6 +1,5 @@
-const { response } = require("express");
-const User = require("../models/UserModel");
-const User = require("../models/UserModel");
+//const { response } = require("express");
+const Users = require("../models/UserModel");
 
 //show the list of user
 const index = (req, res, next) => {
@@ -35,7 +34,7 @@ const show = (req, res, next) => {
 
 // add new user
 const store = (req, res, next) => {
-  let User = new User({
+  let User = new Users({
     name: req.body.name,
     designation: req.body.designation,
     email: req.body.email,
