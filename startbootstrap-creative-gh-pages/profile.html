@@ -26,27 +26,132 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#sell">sell</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#Register">Register crops</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#Purchase">Purchase</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#pesticides">Pesticides</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#Book machinery">Book Machinery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#Account">Account</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#Market">Market</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sell">SALE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Register">REGISTER CROP</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Purchase">PURCHASE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pesticides">PESTICIDES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Book machinery">BOOK MACHINERY</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Account">ACCOUNT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Market">MARKET</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
         <header class="masthead">
+            
+            <div class="container">
+                <style>body{
+                   
+                    background-color: #5F9EA0;
+                }
+
+                
+                .profile-badge{
+                    border:1px solid #c1c1c1;
+                    padding:5px;
+                    position: relative;
+                }
+                
+                .user-detail{
+                    background-color: #fff;
+                    position: relative;
+                    padding:115px 0px 10px 0px;
+                    color:#8B8B89;
+                }
+                .user-detail h3{
+                    margin: 0px;
+                    margin:0px 0px 5px 0px;
+                    color: #000;
+                }
+                .user-detail p{
+                    font-size:14px;
+                }
+                .user-detail .btn{
+                    margin-bottom:10px;
+                    background-color: #fff;
+                    border:1px solid #DEDEDE;
+                    border-radius: 0px;
+                    color:black;
+                }
+                .user-detail .btn i{
+                    color:#D35B4D;
+                    padding-right:18px;
+                }
+                .profile-pic{
+                    position: absolute;
+                    height:120px;
+                    width:120px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 0px;
+                    z-index: 1001;
+                    padding: 10px;
+                }
+                .profile-pic img{
+                   
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 5px 0px #c1c1c1;
+                    cursor: pointer;
+                    width: 100px;
+                    height: 100px;
+                }   
+                </style>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4 col-sm-6 col-xs-12 profile-badge">
+                        <!-- <img src="https://dummyimage.com/600x400/000/"> -->
+                        
+                        <div class="profile-pic">
+                         
+                                <img alt="User Pic" src="https://d30y9cdsu7xlg0.cloudfront.net/png/138926-200.png" id="profile-image1" height="200">
+                                <input id="profile-image-upload" class="hidden" type="file" onchange="previewFile()" >
+                                <div style="color:#999;" >  </div>
+                                
+                        </div>
+                        <div class="user-detail text-center">
+                         
+                          <div class="form-group">  
+                            <label for="Fname">First Name</label>
+                            <input type="text" class="form-control" id="Fname" placeholder="Enter First Name" name="name">
+                          </div>
+        
+                          <div class="form-group">  
+                            <label for="Lname">Last Name</label>
+                            <input type="text" class="form-control" id="Lname" placeholder="Enter Last Name" name="name">
+                          </div>
+        
+                          <div class="form-group">  
+                            <label for="mobile">Mobile Number</label>
+                            <input type="text" class="form-control" id="Mobile" placeholder="Enter Mobile Number" name="Mobile">
+                          
+                        </div>
+                        <div class="form-group">  
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="Enter Address " name="name">
+                          </div>
+                        
+                        <div class="form-group">  
+                            <label for="email">Mail ID</label>
+                            <input type="varchar" class="form-control" id="email" placeholder="Enter Mail " name="mail">
+                          </div>
+                        <div class="form-group">
+                            <label for="age"> Age</label>
+                            <input type="int" class="form-control" id="age" placeholder="Enter Age" name="age">
+                            </div>
+        
+                          
+         <input type="Button" class="btn btn-info" value="Update Profile">  
+                                                       
+         </div></div></div></div>
             <div class="container px-4 px-lg-5 h-100">
+                
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white font-weight-bold">FARM ALIVE</h1>
+                        <h1 class="text-white font-weight-bold">SALE</h1>
+                        <br></br>
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>
                         <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
                     </div>
                 </div>
@@ -57,10 +162,154 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">We've got what you need!</h2>
-                        <hr class="divider divider-light" />
-                        <p class="text-white-75 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
-                        <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
+                        <style>
+                            .container12{
+                                background-color: #ffffff;
+                                width: 45em;
+                                height: 31em;
+                                margin-top: 2em;
+                                border-radius: 2em;
+                                padding: 1em;
+                                
+                            
+                            }
+                            
+                            .menu img{
+                                width: 1.5em;
+                                height: 1.5em;
+                            
+                            }
+                            .user img{
+                                width: 1.5em;
+                                height: 1.5em;
+                            
+                            }
+                            .title{
+                                width: 90%;
+                                display: flex;
+                                justify-content: space-between;
+                                margin: 1em 0 0.8em 0;
+                                
+                            }
+                            .hello h1{
+                                font-size: 1.2em;
+                            }
+                            .hello p{
+                                font-size: 0.8em;
+                                margin-top: -0.7em;
+                                color: #bbbaba;
+                            }
+                            .settings img{
+                                width: 1em;
+                                height: 1em;
+                                margin-top: 1.5em;
+                                margin-right: -4em;
+                            }
+                            .cards{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                            }
+                            .uno{
+                                width: 90%;
+                                height: 8em;
+                                border-radius: 1em;
+                                background: #dfedf1;
+                                margin: 0 0 1em 0;
+                                padding: 1em;
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                            .dos{
+                                width: 90%;
+                                height: 8em;
+                                border-radius: 1em;
+                                background: #ecf8ec;
+                                margin: 0 0 1em 0;
+                                padding: 1em;
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                            .tres{
+                                width: 90%;
+                                height: 8em;
+                                border-radius: 1em;
+                                background: #fcecdf;
+                                margin: 0 0 1em 0;
+                                padding: 1em;
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                            .sub{
+                                font-weight: 800;
+                                font-size: 1em;
+                                margin-bottom: 0.5em;
+                            }
+                            .des{
+                                font-size: 0.7em;
+                                color: #808080;
+                                margin-bottom: 0.5em;
+                            }
+                            .mon{
+                                font-weight: 800;
+                                font-size: 1.2em;
+                            }
+                            .chart{
+                                font-weight: 800;
+                                font-size: 1.6em;
+                                color: #727272;
+                                margin-top: 0.8em;
+                            }
+                            .chart-negative{
+                                font-weight: 800;
+                                font-size: 1.6em;
+                                color: #727272;
+                                margin-top: 0.8em;
+                            }</style>
+                            <div class="container12">
+                                <div class="title">
+                                <div class="hello">
+                                </div>
+                            </div>
+                    
+                            <div class="cards">
+                                <div class="uno">
+                                    <div class="information">
+                                        <div class="sub">Sales</div>
+                                        <div class="des">Total Sales Today</div>
+                                        <div class="mon">₹750</div>
+                    
+                                    </div>
+                                    <div class="chart">
+                                        15%
+                                    </div>
+                                </div>
+                                <div class="dos">
+                                    <div class="information">
+                                        <div class="sub">Profit</div>
+                                        <div class="des">Per Day Ratio</div>
+                                        <div class="mon">₹200</div>
+                    
+                                    </div>
+                                    <div class="chart">
+                                        55%
+                                    </div>
+                                </div>
+                                    
+                                <div class="tres">
+                                    <div class="information">
+                                        <div class="sub">Orders</div>
+                                        <div class="des">Total Orders Today</div>
+                                        <div class="mon">₹930</div>
+                    
+                                    </div>
+                                    <div class="chart-negative">
+                                        -14%
+                                    </div>
+                                </div>
+                    
+                            </div>
                     </div>
                 </div>
             </div>
@@ -68,34 +317,38 @@
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0">At Your Service</h2>
+                <h2 class="text-center mt-0">PESCITIDES</h2>
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Sturdy Themes</h3>
+                            <img class="img-fluid" src="img1/pes2.jpg" alt="..." />
+                            <h3 class="h4 mb-2">Vermi composite</h3>
                             <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Up to Date</h3>
+                            <img class="img-fluid" src="img1/pes1.jpg" alt="..." />
+                            <h3 class="h4 mb-2">organic composite</h3>
                             <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Ready to Publish</h3>
+                            <img class="img-fluid" src="img1/pes3.jpg" alt="..."/>
+                            <h3 class="h4 mb-2">Polester composite</h3>
                             <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Made with Love</h3>
+                            <img class="img-fluid" src="img1/pes4.jpg" alt="..." />
+                            <h3 class="h4 mb-2">Pails Fertilizer</h3>
                             <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
                         </div>
                     </div>
@@ -105,69 +358,248 @@
         <!-- Portfolio-->
         <div id="portfolio">
             <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
+                <style>.container21{
+                    background: #e6e6e6;
+                    font-family: Rubik;
+                }
+                
+                .main-head {
+                    background: #0D1440;
+                    box-shadow: 0px 1px 10px -6px rgba(0, 0, 0, .15);
+                    padding: 1rem;
+                    margin-bottom: 0;
+                    margin-top: 5rem;
+                    color: #fff;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    border-radius: 4px;
+                    font-size: 16px;
+                }
+                
+                .pricing-table {
+                    background: #fff;
+                    box-shadow: 0px 1px 10px -6px rgba(0, 0, 0, .15);
+                    padding: 2rem;
+                    border-radius: 4px;
+                    transition: .3s;
+                }
+                
+                .pricing-table:hover {
+                    box-shadow: 0px 1px 10px -4px rgba(0, 0, 0, .15);
+                }
+                
+                .pricing-table .pricing-label {
+                    border-radius: 2px;
+                    padding: .25rem .5rem;
+                    margin-bottom: 1rem;
+                    display: inline-block;
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+                
+                .pricing-table h2 {
+                    color: #3b3b3b;
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+                
+                .pricing-table h5 {
+                    color: #B3B3B3;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                
+                .pricing-table .pricing-features {
+                    margin-top: 2rem;
+                }
+                
+                .pricing-table .pricing-features .feature {
+                    font-size: 14px;
+                    margin: .5rem 0;
+                    color: #B3B3B3;
+                }
+                
+                .pricing-table .pricing-features .feature span {
+                    display: block;
+                    float: right;
+                    color: #3b3b3b;
+                    font-weight: 500;
+                }
+                
+                .pricing-table 	.price-tag {
+                    margin-top: 2rem;
+                    text-align: center;
+                    font-weight: 500;
+                }
+                
+                .pricing-table .price-tag .symbol {
+                    font-size: 24px;
+                }
+                
+                .pricing-table .price-tag .amount {
+                    letter-spacing: -2px;
+                    font-size: 64px;
+                }
+                
+                .pricing-table .price-tag .after {
+                    color: #3b3b3b;
+                    font-weight: 500;
+                }
+                
+                .pricing-table .price-button {
+                    display: block;
+                    color: #fff;
+                    margin-top: 2rem;
+                    padding: .75rem;
+                    border-radius: 2px;
+                    text-align: center;
+                    font-weight: 500;
+                    transition: .3s;
+                }
+                
+                .pricing-table .price-button:hover {
+                    text-decoration: none;
+                }
+                
+                .purple .pricing-label {
+                    background: #cad2ff;
+                    color: #627afe;
+                }
+                
+                .purple .price-tag {
+                    color: #627afe;
+                }
+                
+                .purple .price-button {
+                    background: #627afe;
+                }
+                
+                .purple .price-button:hover {
+                    background: #546dfe;
+                }
+                
+                .turquoise .pricing-label {
+                    background: #b9edee;
+                    color: #44cdd2;
+                }
+                
+                .turquoise .price-tag {
+                    color: #44cdd2;
+                }
+                
+                .turquoise .price-button {
+                    background: #44cdd2;
+                }
+                
+                .turquoise .price-button:hover {
+                    background: #2dbcc4;
+                }
+                
+                .red .pricing-label {
+                    background: #ffc4c4;
+                    color: #ff5e5e;
+                }
+                
+                .red .price-tag {
+                    color: #ff5e5e;
+                }
+                
+                .red .price-button {
+                    background: #ff5e5e;
+                }
+                
+                .red .price-button:hover {
+                    background: #f23c3c;
+                }</style>
+                <div class="container21">
+                    <div class="row">
+                       <div class="col-md-12 mb-5">
+                          <h2 class="main-head" style="text-align: center;">MARKET TRENDS</h2>
+                       </div>
+                       <!-- Purple Table -->
+                       <div class="col-md-4">
+                          <div class="pricing-table purple">
+                             <!-- Table Head -->
+                             <div class="pricing-label">Trending Vegetables</div>
+                             <h2>SABZI 2022</h2>
+                             <h5>Made fresh</h5>
+                             <!-- Features -->
+                             <div class="pricing-features">
+                                <div class="feature">TOMATO<span>50/kg</span></div>
+                                <div class="feature">POTATO<span>65/kg</span></div>
+                                <div class="feature">SPINIACH<span>30/kg</span></div>
+                                <div class="feature">ONION<span>150/kg</span></div>
+                                <div class="feature">CAULIFLOWER<span>60/kg</span></div>
+                             </div>
+                             <!-- Price -->
+                             <div class="price-tag">
+                                <span class="symbol">₹</span>
+                                <span class="amount">809.99</span>
+                                <span class="after">/month</span>
+                             </div>
+                             <!-- Button -->
+                             <a class="price-button" href="#">Get Started</a>
+                          </div>
+                       </div>
+                       <!-- Turquoise Table -->
+                       <div class="col-md-4">
+                          <div class="pricing-table turquoise">
+                             <!-- Table Head -->
+                             <div class="pricing-label">TRENDING FRUITS</div>
+                             <h2>FRUITS 2022</h2>
+                             <h5>Made for experienced users</h5>
+                             <!-- Features -->
+                             <div class="pricing-features">
+                                <div class="feature">MANGO<span>150/kg</span></div>
+                                <div class="feature">APPLE<span>100/kg</span></div>
+                                <div class="feature">ORANGE<span>70/kg</span></div>
+                                <div class="feature">COCONUT<span>40/per</span></div>
+                                <div class="feature">WATERMELON<span>40/kg</span></div>
+                             </div>
+                             <!-- Price -->
+                             <div class="price-tag">
+                                <span class="symbol">₹</span>
+                                <span class="amount">1119.99</span>
+                                <span class="after">/month</span>
+                             </div>
+                             <!-- Button -->
+                             <a class="price-button" href="#">Get Started</a>
+                          </div>
+                       </div>
+                       <!-- Red Table -->
+                       <div class="col-md-4">
+                          <div class="pricing-table red">
+                             <!-- Table Head -->
+                             <div class="pricing-label">GRAINS PRICE</div>
+                             <h2>POWER 2022</h2>
+                             <h5>FRESH</h5>
+                             <!-- Features -->
+                             <div class="pricing-features">
+                                <div class="feature">WHEAT<span>60/kg</span></div>
+                                <div class="feature">CORN<span>50/kg</span></div>
+                                <div class="feature">RICE<span>70/kg</span></div>
+                                <div class="feature">MILLET<span>67/kg</span></div>
+                                <div class="feature">PULSE<span>80/kg</span></div>
+                             </div>
+                             <!-- Price -->
+                             <div class="price-tag">
+                                <span class="symbol">₹</span>
+                                <span class="amount">1212.99</span>
+                                <span class="after">/month</span>
+                             </div>
+                             <!-- Button -->
+                             <a class="price-button" href="#">Get Started</a>
+                          </div>
+                       </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="..." />
-                            <div class="portfolio-box-caption p-3">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                 </div>
             </div>
         </div>
         <!-- Call to action-->
         <section class="page-section bg-dark text-white">
             <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-                <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Download Now!</a>
+                <h2 class="mb-4">Book Machines</h2>
+                <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">click Here!!</a>
             </div>
         </section>
         <!-- Contact-->
@@ -175,9 +607,9 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6 text-center">
-                        <h2 class="mt-0">Let's Get In Touch!</h2>
+                        <h2 class="mt-0">MARKET</h2>
                         <hr class="divider" />
-                        <p class="text-muted mb-5">Ready to start your next project with us? Send us a messages and we will get back to you as soon as possible!</p>
+                        <p class="text-muted mb-5">Check out the latest trends on market.Stay updated Get the Latest!!</p>
                     </div>
                 </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
