@@ -1,0 +1,109 @@
+import Axios from "axios";
+import "./App.css";
+import { useState } from "react";
+
+function App() {
+  const [name, setName] = useState("");
+  const [age, setAge] = useState(0);
+  const [state, setstate] = useState("");
+  const [taluk, settaluk] = useState("");
+  const [contact, setcontact] = useState("");
+  const [adhaarnumber, setadhaarnumber] = useState(0);
+
+  const [FarmerList, setFarmerList] = useState([]);
+
+  const addFarmer = () => {
+    Axios.post("http://localhost:3001/create", {
+      name: name,
+      age: age,
+      state: state,
+      taluk: taluk,
+      contact: contact,
+      adhaarnumber: adhaarnumber,
+    }).then(() => {
+      setFarmerList([
+        ...FarmerList,
+        {
+          name: name,
+          age: age,
+          state: state,
+          taluk: taluk,
+          contact: contact,
+          adhaarnumber: adhaarnumber,
+        },
+      ]);
+    });
+  };
+
+  const getFarmer = () => {
+    Axios.get("http://localhost:3001/farmer").then((response) => {
+      setFarmerList(response.data);
+    });
+  };
+
+  return (
+    <div className="App" >
+      <header className="App-header">
+        <div className="Reg" id="formcontainer">
+          <center>
+            <h1>FARM ALIVE</h1>
+          </center>
+          <h2>REGISTRATION</h2>
+        </div>
+      </header>
+
+      <div id="formContainer" className="information">
+        <label>NAME</label>
+        <input
+          type="text"
+          onChange={(event) => {
+            setName(event.target.value);
+          }}
+        />
+
+        <label>AGE</label>
+        <input
+          type="integer"
+          onChange={(event) => {
+            setAge(event.target.value);
+          }}
+        />
+
+        <label>STATE</label>
+        <input
+          type="text"
+          onChange={(event) => {
+            setstate(event.target.value);
+          }}
+        />
+
+        <label>TALUK</label>
+        <input
+          type="text"
+          onChange={(event) => {
+            settaluk(event.target.value);
+          }}
+        />
+
+        <label>CONTACT NUMBER</label>
+        <input
+          type="integer"
+          onChange={(event) => {
+            setcontact(event.target.value);
+          }}
+        />
+
+        <label>ADHAAR NUMBER</label>
+        <input
+          type="text"
+          onChange={(event) => {
+            setadhaarnumber(event.target.value);
+          }}
+        />
+        <button className="btn-submit-form" onClick={addFarmer}>Register</button>
+      </div>
+    </div>
+  );
+}
+
+export default App;
